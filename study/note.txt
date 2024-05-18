@@ -1,0 +1,55 @@
+yt-dlpのextract_infoについて (extract_flat=Trueのとき)
+extract_flat=Falseだと簡単になるが時間かかる
+
+
+再生リスト指定
+    途中のURL指定
+        id 再生リストのid
+        title 再生リストのtitle
+        url 再生リストのurl utube.com/playlist?list=
+        webpage_url 再生リストのその動画のurl ...utube.com/watch?v= かつ &list=
+        original_url 入力されたurl
+
+
+    再生リスト自体のurlを指定
+        id 再生リストのid
+        webpage_url 再生リストのurl ...utube.com/playlist?list=
+        title 再生リストのtitle
+        entries
+            動画数分のリスト
+            id 動画のid 再生リストとは関連付けされてない
+            url 動画のurl 再生リストとは関連付けされてない
+            title 動画のtitle
+
+通常動画指定
+    id 動画のid
+    title
+    original_url 入力されたurl
+    webpage_url 動画のurl ...utube.com/watch?v=
+
+
+
+
+*** 実装 ***
+再生リストとは関連付けされていない動画のurlを取得したい
+通常であればそのまま可能だが、再生リストであれば、その再生リスト自体のurlが必要
+
+
+----------------------------------------------------------------------
+extract_info (extract_flat=Trueのとき)でurlから情報取得
+この戻り値に...
+
+entries があるか:
+    ->引数のurlは再生リスト自体を指定
+    type(list)であるentriesを使用してurl取得
+else:
+    webpage_url に &list= があるか:
+        ->引数のurlは再生リストの途中動画を指定
+        urlを使って再生リスト自体のurlを指定し、全urlを取得する
+        再帰呼び出しみたいになる
+    else:
+        ->引数のurlは通常の動画
+        webpage_urlが長いやつ
+        何もしなくていい
+----------------------------------------------------------------------
+上のやつanalysis_url.pyの_analyze_metadataメソッドの内容

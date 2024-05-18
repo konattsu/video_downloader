@@ -200,5 +200,5 @@ pyrightconfig.json
 
 # Files used to verify the use of yt-dlp
 older/
-study/
+study/*
 !study/note.txt
