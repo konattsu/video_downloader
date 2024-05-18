@@ -5,6 +5,6 @@ __pycache__/
 *$py.class
 
 # Files used to verify the use of yt-dlp
-older
-study
+older/
+study/
 !study/note.txt
