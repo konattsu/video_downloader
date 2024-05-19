@@ -6,8 +6,8 @@ ___
 
 ## Introduction
 
-`yt-dlp`を使用してYouTube上から簡単に動画をダウンロードできます。再生リストのダウンロードも対応しており、パフォーマンス向上のためマルチスレッドを使用しています。<br>
-This project allows you to easily download videos from YouTube using `yt-dlp`. It supports downloading playlists and utilizes multi-threading for improved performance and ease of use.
+`yt-dlp`を使用してコマンドラインからYouTubeに投稿されている動画を簡単にダウンロードできます。再生リストのダウンロードも対応しており、パフォーマンス向上のためマルチスレッドを使用しています。<br>
+You can easily download videos posted on YouTube from the command line using `yt-dlp`. It supports downloading playlists and utilizes multi-threading for improved performance and ease of use.
 
 ## Environment
 
@@ -16,10 +16,9 @@ This project allows you to easily download videos from YouTube using `yt-dlp`. I
 | Python                 | 3.12.2  |
 | (ffmpeg)               | 7.0     |
 
-For other package versions, please refer to `requirements.txt`.
+For other package versions, please refer to [requirements.txt](requirements.txt).
 
-`ffmpeg` is required to use all functions.
-`ffmpeg` official site [here](https://ffmpeg.org/download.html).
+`ffmpeg` is required to use all functions. `ffmpeg` official site [here](https://ffmpeg.org/download.html).
 
 ## Development Environment Setup
 
@@ -105,6 +104,14 @@ To use the tool, follow these steps:
 - Multi-threaded downloading for faster performance.
 - Flexible specification of video quality, thumbnails and titles
 
+## Release Notes
+
+[1.0.0] - 2024-05-19
+
+- First public release!
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+___
