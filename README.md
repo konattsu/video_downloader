@@ -61,16 +61,18 @@ To use the tool, follow these steps:
     <br>
 
 2. **Select storage folders**
-    動画やサムネイルを保存するフォルダーのパスを指定します。
+
     Specify the path of the folder where videos and thumbnails are stored.
     <br>
 
 3. **Choice to use or not to use `ffmpeg`**
+
     `ffmpeg`を使用すると動画を音声ファイルに変換したり、サムネイルの画像形式を変更できます。
     `ffmpeg` can be used to convert videos to audio files and change the thumbnail image format.
     <br>
 
 4. **Enter the urls**
+
     ダウンロードしたい動画のurlを入力します。再生リストが混ざっていても大丈夫です。
     Enter the url of the video you want to download. It is okay if the playlists are mixed up; you can also read from a csv file where the url has been entered.
 
@@ -83,12 +85,14 @@ To use the tool, follow these steps:
     <br>
 
 5. **Select download options**
+
     ダウンロード時の画質、ファイル名、サムネイルなどを選択します。一部機能は`ffmpeg`が必要です。
     Select the video quality, file name and thumbnail for downloading. Some functions require `ffmpeg`.
 
     <br>
 
 6. **Start downloading**
+
     ダウンロードが開始されます。存在しないurlやアクセス権限がないurlはダウンロードできず、最後に表示されます。
     The download will start. URLs that do not exist or for which you do not have access rights cannot be downloaded and will be displayed at the end.
 
