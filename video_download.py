@@ -102,7 +102,7 @@ class VideoDownloader:
                 self.logger.error(
                     f"Failed to download video. url: '{url}', file_path: '{file_path}'"
                 )
-                # TODO このときのファイル名とかurlを保持して最後にもう一回DL試す
+                # TODO このときのファイル名とかurlを保持して最後にもう一回DL試したい
                 return False
         if self.download_mode == DownloadMode.WAV:
             if not self._post_convert_to_wav_(file_path):
