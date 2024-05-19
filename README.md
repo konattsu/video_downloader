@@ -6,8 +6,8 @@ ___
 
 ## Introduction
 
-`yt-dlp`を使用してYouTube上から簡単に動画をダウンロードできます。再生リストのダウンロードも対応しており、パフォーマンス向上のためマルチスレッドを使用しています。<br>
-This project allows you to easily download videos from YouTube using `yt-dlp`. It supports downloading playlists and utilizes multi-threading for improved performance and ease of use.
+`yt-dlp`を使用してコマンドラインからYouTubeに投稿されている動画を簡単にダウンロードできます。再生リストのダウンロードも対応しており、パフォーマンス向上のためマルチスレッドを使用しています。<br>
+You can easily download videos posted on YouTube from the command line using `yt-dlp`. It supports downloading playlists and utilizes multi-threading for improved performance and ease of use.
 
 ## Environment
 
@@ -108,3 +108,8 @@ To use the tool, follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+___
+
+プログラミング(github)初心者のため拙い箇所もあるかと思います...
+絶賛勉強中ですので分かりにくい表現等あれば申し訳ないです。
