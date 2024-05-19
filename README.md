@@ -62,13 +62,16 @@ To use the tool, follow these steps:
 
 2. **Select storage folders**
 
-    Specify the path of the folder where videos and thumbnails are stored.
+    動画やサムネイルが保存されるフォルダのパスを指定します。<br>
+    Specify the path of the folder where videos and thumbnails will be stored.
+
     <br>
 
 3. **Choice to use or not to use `ffmpeg`**
 
     `ffmpeg`を使用すると動画を音声ファイルに変換したり、サムネイルの画像形式を変更できます。<br>
     `ffmpeg` can be used to convert videos to audio files and change the thumbnail image format.
+
     <br>
 
 4. **Enter the urls**
